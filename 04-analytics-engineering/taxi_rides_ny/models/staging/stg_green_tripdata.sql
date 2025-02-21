@@ -3,7 +3,7 @@
         materialized='view'
     )
 }}
-
+    
 with tripdata as 
 (
   select *,
