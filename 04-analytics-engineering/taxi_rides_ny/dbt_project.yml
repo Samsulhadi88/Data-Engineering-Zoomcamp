@@ -40,7 +40,8 @@ models:
       +enabled: true
       # Applies to all files under models/.../
       staging:
-          +materialized: view
+        +enabled: true 
+        +materialized: view
 #      core:
 #          materialized: table
 #vars:
