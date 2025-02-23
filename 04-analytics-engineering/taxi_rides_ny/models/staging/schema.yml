@@ -5,8 +5,13 @@ sources:
     database: dbt-projects-451303
     schema: trips_data_all
     location: europe-west2
+    tables:
+      - name: green_tripdata
 #    database: "{{ env_var('DBT_DATABASE', 'taxi-rides-ny-339813-412521') }}"
 #    schema: "{{ env_var('DBT_SCHEMA', 'trips_data_all') }}"
       # loaded_at_field: record_loaded_at
-    tables:
-      - name: green_tripdata
+
+
+models:
+  - name: stg_green_tripdata
+    description: "Staging model for green trip data"

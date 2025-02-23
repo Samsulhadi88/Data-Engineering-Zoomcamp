@@ -37,10 +37,8 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   taxi_rides_ny:
-      +enabled: true
       # Applies to all files under models/.../
       staging:
-        +enabled: true 
         +materialized: view
 #      core:
 #          materialized: table
